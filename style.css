@@ -155,17 +155,18 @@ tooltip {
 #custom-nowplaying {
   min-width: 24px;
   margin: 3px 2px;
-  padding: 0 8px;
+  padding: 0 7px;
   color: #81d5cd;
   background: rgba(129, 213, 205, 0.10);
   border: 1px solid rgba(129, 213, 205, 0.24);
-  border-radius: 19px;
-  transition: background 180ms ease;
+  border-radius: 50%;
+  transition: background 180ms ease, border-color 180ms ease;
 }
 
 #custom-nowplaying.playing {
-  border-color: rgba(129, 213, 205, 0.90);
-  background: rgba(129, 213, 205, 0.14);
+  color: #0e1514;
+  border-color: #81d5cd;
+  background: #81d5cd;
 }
 
 #custom-nowplaying:hover {

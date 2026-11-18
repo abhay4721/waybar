@@ -10,16 +10,20 @@ artist=$(playerctl metadata artist 2>/dev/null || true)
 title=$(playerctl metadata title 2>/dev/null || true)
 
 if [[ -n "$artist" && -n "$title" ]]; then
-  text="$artist — $title"
+  media_text="$artist — $title"
 else
-  text="${title:-Now playing}"
+  media_text="${title:-Now playing}"
 fi
+
+icons=("󰝚" "󰎇" "󰎈")
+icon_index=$(( $(date +%s) % 3 ))
+icon="${icons[$icon_index]}"
 
 class="paused"
 [[ "$status" == "Playing" ]] && class="playing"
 
 jq -nc \
-  --arg text "󰝚 $text" \
-  --arg tooltip "$status: $text" \
+  --arg text "$icon" \
+  --arg tooltip "$status: $media_text" \
   --arg class "$class" \
   '{text: $text, tooltip: $tooltip, class: $class}'
