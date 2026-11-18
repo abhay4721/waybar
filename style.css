@@ -60,10 +60,6 @@ window#waybar > box {
   font-weight: bold;
 }
 
-#clock label {
-  margin: 0 auto;
-}
-
 #workspaces {
   margin: 5px 0;
   border-radius: 11px;
