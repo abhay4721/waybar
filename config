@@ -6,7 +6,8 @@
   "spacing": 4,
   "modules-left": [
     "custom/terminal",
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "custom/nowplaying"
   ],
   "modules-center": [
     "custom/launcher",
@@ -160,5 +161,14 @@
     "on-click": "activate",
     "on-click-middle": "close",
     "tooltip-format": "{title}"
+  },
+  "custom/nowplaying": {
+    "exec": "bash -lc 'status=$(playerctl status 2>/dev/null || true); if [[ -n \"$status\" ]]; then artist=$(playerctl metadata artist 2>/dev/null || true); title=$(playerctl metadata title 2>/dev/null || true); if [[ -n \"$artist\" && -n \"$title\" ]]; then text=\"$artist — $title\"; else text=\"${title:-Now playing}\"; fi; jq -nc --arg text \"󰝚 $text\" --arg tooltip \"$status: $text\" --arg status \"$status\" '{text:$text,tooltip:$tooltip,class:(($status == \"Playing\") and \"playing\" or \"paused\")}'; else jq -nc '{text:\"\",tooltip:\"No media playing\",class:\"stopped\"}'; fi'",
+    "interval": 2,
+    "return-type": "json",
+    "escape": true,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-click-middle": "playerctl previous"
   }
 }
