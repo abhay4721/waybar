@@ -163,7 +163,7 @@
     "tooltip-format": "{title}"
   },
   "custom/nowplaying": {
-    "exec": "bash -lc 'status=$(playerctl status 2>/dev/null || true); if [[ -n \"$status\" ]]; then artist=$(playerctl metadata artist 2>/dev/null || true); title=$(playerctl metadata title 2>/dev/null || true); if [[ -n \"$artist\" && -n \"$title\" ]]; then text=\"$artist — $title\"; else text=\"${title:-Now playing}\"; fi; jq -nc --arg text \"󰝚 $text\" --arg tooltip \"$status: $text\" --arg status \"$status\" '{text:$text,tooltip:$tooltip,class:(($status == \"Playing\") and \"playing\" or \"paused\")}'; else jq -nc '{text:\"\",tooltip:\"No media playing\",class:\"stopped\"}'; fi'",
+    "exec": "$HOME/.config/waybar/scripts/now-playing.sh",
     "interval": 2,
     "return-type": "json",
     "escape": true,
