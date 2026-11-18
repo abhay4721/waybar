@@ -47,7 +47,7 @@ window#waybar > box {
 #tray,
 #custom-ml4w,
 #custom-power {
-  margin: 5px 2px;
+  margin: 3px 2px;
   padding: 0 9px;
   color: #81d5cd;
   background: transparent;
@@ -63,14 +63,14 @@ window#waybar > box {
 }
 
 #workspaces button {
-  min-width: 26px;
-  min-height: 26px;
+  min-width: 24px;
+  min-height: 24px;
   padding: 0;
   color: #81d5cd;
   background: transparent;
   border: 1px solid #81d5cd;
   border-radius: 999px;
-  margin: 3px 2px;
+  margin: 2px 2px;
   transition: background-color 180ms ease, color 180ms ease;
 }
 
