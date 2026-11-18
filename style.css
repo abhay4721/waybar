@@ -11,11 +11,28 @@ window#waybar {
   color: #dde4e2;
 }
 
-window#waybar > box {
+.modules-left,
+.modules-center,
+.modules-right {
   background: rgba(14, 21, 20, 0.72);
   border: 1px solid rgba(129, 213, 205, 0.22);
   border-radius: 18px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.38);
+  margin: 0;
+}
+
+.modules-left {
+  margin-left: 8px;
+}
+
+.modules-right {
+  margin-right: 8px;
+}
+
+window#waybar > box {
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 #workspaces,
@@ -110,4 +127,22 @@ tooltip {
   background: #1a2120;
   border: 1px solid #3f4947;
   border-radius: 8px;
+}
+
+#custom-launcher,
+#taskbar button {
+  min-width: 28px;
+  min-height: 28px;
+  margin: 5px 2px;
+  padding: 0 5px;
+  border-radius: 8px;
+}
+
+#taskbar button.active {
+  background: rgba(129, 213, 205, 0.18);
+  border: 1px solid rgba(129, 213, 205, 0.55);
+}
+
+#taskbar button:hover {
+  background: #81d5cd;
 }

@@ -5,15 +5,15 @@
   "height": 46,
   "spacing": 4,
   "modules-left": [
-    "custom/terminal",
-    "hyprland/workspaces"
+    "custom/launcher",
+    "wlr/taskbar"
   ],
   "modules-center": [
-    "custom/launcher",
-    "clock",
-    "custom/swaync"
+    "hyprland/workspaces"
   ],
   "modules-right": [
+    "clock",
+    "custom/swaync",
     "custom/updates",
     "battery",
     "power-profiles-daemon",
@@ -151,5 +151,14 @@
     "format": "",
     "tooltip": "Open power menu",
     "on-click": "ml4w-powermenu toggle"
+  },
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 20,
+    "icon-theme": "Morewaita",
+    "spacing": 4,
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "tooltip-format": "{title}"
   }
 }
