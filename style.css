@@ -153,15 +153,15 @@ tooltip {
 }
 
 #custom-nowplaying {
-  min-width: 58px;
+  min-width: 24px;
+  max-width: 260px;
   margin: 3px 2px;
-  padding: 0 6px;
+  padding: 0 9px;
   color: #81d5cd;
   background: rgba(129, 213, 205, 0.10);
   border: 1px solid rgba(129, 213, 205, 0.24);
   border-radius: 12px;
   font-size: 12px;
-  transition: background 180ms ease, border-color 180ms ease;
 }
 
 #custom-nowplaying.playing {
