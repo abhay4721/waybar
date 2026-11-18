@@ -5,15 +5,14 @@
   "height": 46,
   "spacing": 4,
   "modules-left": [
-    "custom/launcher",
-    "wlr/taskbar"
-  ],
-  "modules-center": [
+    "custom/terminal",
     "hyprland/workspaces"
   ],
+  "modules-center": [
+    "custom/launcher",
+    "clock"
+  ],
   "modules-right": [
-    "clock",
-    "custom/swaync",
     "custom/updates",
     "battery",
     "power-profiles-daemon",
