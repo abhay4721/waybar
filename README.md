@@ -2,6 +2,10 @@
 
 A personal, compact, frosted-glass Waybar theme for Hyprland and ML4W, designed with three rounded sections across the top of the screen.
 
+## Preview
+
+![Waybar Theme Preview](ss.png)
+
 ## Layout
 
 - **Left bar:** Terminal and Hyprland workspaces
