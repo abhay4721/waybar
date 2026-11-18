@@ -17,7 +17,6 @@ window#waybar {
   background: rgba(14, 21, 20, 0.72);
   border: 1px solid rgba(129, 213, 205, 0.22);
   border-radius: 28px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.38);
   margin: 0;
 }
 
@@ -32,7 +31,6 @@ window#waybar {
 window#waybar > box {
   background: transparent;
   border: none;
-  box-shadow: none;
 }
 
 #workspaces,
@@ -63,14 +61,14 @@ window#waybar > box {
 }
 
 #workspaces button {
-  min-width: 24px;
-  min-height: 24px;
+  min-width: 20px;
+  min-height: 20px;
   padding: 0;
   color: #81d5cd;
   background: transparent;
   border: 1px solid #81d5cd;
   border-radius: 999px;
-  margin: 2px 2px;
+  margin: 1px 2px;
   transition: background-color 180ms ease, color 180ms ease;
 }
 
