@@ -45,24 +45,28 @@ window#waybar > box {
 #tray,
 #custom-ml4w,
 #custom-power {
-  margin: 3px 1px;
-  padding: 0 6px;
+  margin: 5px 1px;
+  padding: 0 7px;
   color: #81d5cd;
   background: transparent;
-  border-radius: 8px;
+  border-radius: 15px;
 }
 
 #clock {
-  min-width: 56px;
+  min-width: 64px;
   margin: 3px 1px;
-  padding: 0 4px;
+  padding: 0;
   font-size: 12px;
   font-weight: bold;
 }
 
+#clock label {
+  margin: 0 auto;
+}
+
 #workspaces {
-  margin: 3px 0;
-  border-radius: 12px;
+  margin: 5px 0;
+  border-radius: 11px;
   padding: 0 2px;
 }
 
@@ -138,7 +142,7 @@ tooltip {
 #taskbar button {
   min-width: 28px;
   min-height: 28px;
-  margin: 5px 1px;
+  margin: 5px 5px;
   padding: 0 0px;
   border-radius: 8px;
 }
