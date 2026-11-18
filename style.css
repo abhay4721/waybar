@@ -12,9 +12,10 @@ window#waybar {
 }
 
 window#waybar > box {
-  background: rgba(14, 21, 20, 0.94);
-  border: 1px solid #3f4947;
-  border-radius: 12px;
+  background: rgba(14, 21, 20, 0.72);
+  border: 1px solid rgba(129, 213, 205, 0.22);
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.38);
 }
 
 #workspaces,
