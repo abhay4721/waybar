@@ -1,0 +1,111 @@
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: "Fira Sans Semibold", "Symbols Nerd Font";
+  font-size: 13px;
+}
+
+window#waybar {
+  background: transparent;
+  color: #dde4e2;
+}
+
+window#waybar > box {
+  background: rgba(14, 21, 20, 0.94);
+  border: 1px solid #3f4947;
+  border-radius: 12px;
+}
+
+#workspaces,
+#clock,
+#custom-terminal,
+#custom-launcher,
+#custom-swaync,
+#custom-updates,
+#battery,
+#power-profiles-daemon,
+#pulseaudio,
+#tray,
+#custom-ml4w,
+#custom-power {
+  margin: 5px 2px;
+  padding: 0 9px;
+  color: #81d5cd;
+  background: transparent;
+  border-radius: 8px;
+}
+
+#clock {
+  font-weight: bold;
+}
+
+#workspaces {
+  padding: 0 4px;
+}
+
+#workspaces button {
+  min-width: 24px;
+  padding: 0 3px;
+  color: #81d5cd;
+  background: transparent;
+  border: 1px solid #81d5cd;
+  border-radius: 50%;
+  margin: 5px 2px;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+#workspaces button.active {
+  color: #0e1514;
+  background: #81d5cd;
+  border-color: #81d5cd;
+}
+
+#workspaces button.empty {
+  color: #dde4e2;
+  border-color: #899391;
+  opacity: 0.55;
+}
+
+#workspaces button:hover,
+#custom-terminal:hover,
+#custom-launcher:hover,
+#clock:hover,
+#custom-swaync:hover,
+#custom-updates:hover,
+#power-profiles-daemon:hover,
+#pulseaudio:hover,
+#custom-ml4w:hover,
+#custom-power:hover {
+  color: #0e1514;
+  background: #81d5cd;
+}
+
+#battery.warning {
+  color: #f0c674;
+}
+
+#battery.critical {
+  color: #ff6b6b;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: #81d5cd;
+}
+
+#pulseaudio.muted {
+  color: #899391;
+}
+
+#tray {
+  padding: 0 8px;
+  background: rgba(9, 15, 15, 0.82);
+}
+
+tooltip {
+  color: #dde4e2;
+  background: #1a2120;
+  border: 1px solid #3f4947;
+  border-radius: 8px;
+}
