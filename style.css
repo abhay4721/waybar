@@ -60,6 +60,11 @@ window#waybar > box {
   font-weight: bold;
 }
 
+#clock label {
+  min-width: 64px;
+  padding: 0;
+}
+
 #workspaces {
   margin: 5px 0;
   border-radius: 11px;
@@ -154,8 +159,8 @@ tooltip {
 
 #custom-nowplaying {
   min-width: 24px;
-  margin: 3px 2px;
-  padding: 0 9px;
+  margin: 6px 6px;
+  padding: 0 5px;
   color: #81d5cd;
   background: rgba(129, 213, 205, 0.10);
   border: 1px solid rgba(129, 213, 205, 0.24);
