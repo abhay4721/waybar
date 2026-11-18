@@ -150,14 +150,13 @@ tooltip {
 
 #custom-nowplaying {
   min-width: 24px;
-  max-width: 220px;
   margin: 5px 2px;
   padding: 0 10px;
   color: #81d5cd;
   background: rgba(129, 213, 205, 0.10);
   border: 1px solid rgba(129, 213, 205, 0.24);
   border-radius: 10px;
-  transition: max-width 300ms ease, background 180ms ease;
+  transition: background 180ms ease;
 }
 
 #custom-nowplaying.playing {
