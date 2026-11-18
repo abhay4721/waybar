@@ -16,7 +16,7 @@ window#waybar {
 .modules-right {
   background: rgba(14, 21, 20, 0.72);
   border: 1px solid rgba(129, 213, 205, 0.22);
-  border-radius: 18px;
+  border-radius: 28px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.38);
   margin: 0;
 }
