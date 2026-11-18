@@ -45,24 +45,25 @@ window#waybar > box {
 #tray,
 #custom-ml4w,
 #custom-power {
-  margin: 2px 0;
-  padding: 0 7px;
+  margin: 3px 1px;
+  padding: 0 6px;
   color: #81d5cd;
   background: transparent;
   border-radius: 8px;
 }
 
 #clock {
-  min-width: 58px;
-  padding: 0 8px;
+  min-width: 56px;
+  margin: 3px 1px;
+  padding: 0 4px;
   font-size: 12px;
   font-weight: bold;
 }
 
 #workspaces {
-  margin: 5px 0;
+  margin: 3px 0;
   border-radius: 12px;
-  padding: 0 0px;
+  padding: 0 2px;
 }
 
 #workspaces button {
@@ -137,8 +138,8 @@ tooltip {
 #taskbar button {
   min-width: 28px;
   min-height: 28px;
-  margin: 5px 2px;
-  padding: 0 5px;
+  margin: 5px 1px;
+  padding: 0 0px;
   border-radius: 8px;
 }
 
@@ -152,9 +153,9 @@ tooltip {
 }
 
 #custom-nowplaying {
-  min-width: 28px;
-  margin: 7px 6px;
-  padding: 0 10px;
+  min-width: 24px;
+  margin: 3px 2px;
+  padding: 0 8px;
   color: #81d5cd;
   background: rgba(129, 213, 205, 0.10);
   border: 1px solid rgba(129, 213, 205, 0.24);
