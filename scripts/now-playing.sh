@@ -15,15 +15,25 @@ else
   media_text="${title:-Now playing}"
 fi
 
-icons=("󰝚" "󰎇" "󰎈")
-icon_index=$(( $(date +%s) % 3 ))
-icon="${icons[$icon_index]}"
-
 class="paused"
-[[ "$status" == "Playing" ]] && class="playing"
+text=""
+
+if [[ "$status" == "Playing" ]]; then
+  class="playing"
+  frame=$(( $(date +%s%N) / 500000000 % 6 ))
+  frames=(
+    "▁▃▂▅▆▃▄▇▂▅▃▁"
+    "▂▅▃▇▂▄▆▅▃▇▂▁"
+    "▃▇▅▂▆▃▇▄▂▅▃▂"
+    "▅▂▆▃▇▅▂▇▃▄▁▃"
+    "▇▃▄▆▂▅▇▃▅▂▆▁"
+    "▂▆▇▃▅▂▄▇▆▃▅▂"
+  )
+  text="${frames[$frame]}"
+fi
 
 jq -nc \
-  --arg text "$icon" \
+  --arg text "$text" \
   --arg tooltip "$status: $media_text" \
   --arg class "$class" \
   '{text: $text, tooltip: $tooltip, class: $class}'

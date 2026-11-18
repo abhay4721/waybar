@@ -153,22 +153,18 @@ tooltip {
 }
 
 #custom-nowplaying {
-  min-width: 24px;
+  min-width: 58px;
   margin: 3px 2px;
-  padding: 0 7px;
+  padding: 0 6px;
   color: #81d5cd;
   background: rgba(129, 213, 205, 0.10);
   border: 1px solid rgba(129, 213, 205, 0.24);
-  border-radius: 50%;
+  border-radius: 12px;
+  font-size: 12px;
   transition: background 180ms ease, border-color 180ms ease;
 }
 
 #custom-nowplaying.playing {
-  color: #0e1514;
-  border-color: #81d5cd;
-  background: #81d5cd;
-}
-
-#custom-nowplaying:hover {
-  background: rgba(129, 213, 205, 0.20);
+  border-color: rgba(129, 213, 205, 0.90);
+  background: rgba(129, 213, 205, 0.14);
 }
