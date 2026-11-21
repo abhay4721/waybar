@@ -60,6 +60,11 @@ window#waybar > box {
   font-weight: bold;
 }
 
+#custom-terminal,
+#custom-swaync {
+  font-size: 14px;
+}
+
 #workspaces {
   margin: 4px 0;
   border-radius: 11px;
