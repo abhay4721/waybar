@@ -33,7 +33,7 @@
     }
   },
   "custom/terminal": {
-    "format": "",
+    "format": "󰄛",
     "tooltip": "Open terminal",
     "on-click": "bash -lc \"$HOME/.config/ml4w/settings/terminal.sh\""
   },
