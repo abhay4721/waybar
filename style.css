@@ -21,11 +21,20 @@ window#waybar {
 }
 
 .modules-left {
+  background: transparent;
+  border: none;
+  border-radius: 0;
   margin-left: 8px;
+  padding-left: 8px;
+  padding-right: 3px;
 }
 
 .modules-right {
+  background: transparent;
+  border: none;
+  border-radius: 0;
   margin-right: 8px;
+  padding-right: 8px;
 }
 
 window#waybar > box {
@@ -60,6 +69,51 @@ window#waybar > box {
   font-weight: bold;
 }
 
+#custom-terminal {
+  border: 1px solid rgba(129, 213, 205, 0.22);
+  background: rgba(14, 21, 20, 0.72);
+  border-radius: 15px;
+}
+
+#custom-updates,
+#pulseaudio {
+  border: 1px solid rgba(129, 213, 205, 0.22);
+  background: rgba(14, 21, 20, 0.72);
+  border-radius: 15px;
+}
+
+#power-profiles-daemon,
+#tray,
+#custom-ml4w,
+#custom-power {
+  margin: 6px 0;
+  padding: 0 6px;
+  background: rgba(14, 21, 20, 0.72);
+  border-top: 1px solid rgba(129, 213, 205, 0.22);
+  border-bottom: 1px solid rgba(129, 213, 205, 0.22);
+}
+
+#power-profiles-daemon {
+  border-left: 1px solid rgba(129, 213, 205, 0.22);
+  border-radius: 15px 0 0 15px;
+}
+
+#custom-power {
+  border-right: 1px solid rgba(129, 213, 205, 0.22);
+  border-radius: 0 15px 15px 0;
+}
+
+#battery {
+  min-width: 20px;
+  margin-right: 4px;
+  padding: 0 6px;
+  font-size: 10px;
+  border: 1px solid;
+  border-radius: 15px;
+  background: rgba(14, 21, 20, 0.72);
+  box-shadow: 2px 0 0 -1px currentColor;
+}
+
 #custom-terminal,
 #custom-swaync {
   font-size: 14px;
@@ -67,7 +121,9 @@ window#waybar > box {
 
 #workspaces {
   margin: 4px 0;
-  border-radius: 11px;
+  border: 1px solid rgba(129, 213, 205, 0.22);
+  background: rgba(14, 21, 20, 0.72);
+  border-radius: 15px;
   padding: 0 2px;
 }
 
@@ -129,7 +185,6 @@ window#waybar > box {
 
 #tray {
   padding: 0 6px;
-  background: rgba(9, 15, 15, 0.82);
 }
 
 tooltip {
@@ -164,7 +219,7 @@ tooltip {
   color: #81d5cd;
   background: rgba(129, 213, 205, 0.10);
   border: 1px solid rgba(129, 213, 205, 0.24);
-  border-radius: 12px;
+  border-radius: 15px;
   font-size: 10px;
 }
 
