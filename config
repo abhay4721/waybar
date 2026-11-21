@@ -33,12 +33,12 @@
     }
   },
   "custom/terminal": {
-    "format": "󰄛",
+    "format": "󰣇",
     "tooltip": "Open terminal",
     "on-click": "bash -lc \"$HOME/.config/ml4w/settings/terminal.sh\""
   },
   "custom/launcher": {
-    "format": "󰣇",
+    "format": "󰕰",
     "tooltip": "Open application launcher",
     "on-click": "bash -lc \"$HOME/.config/ml4w/scripts/ml4w-launcher\""
   },
