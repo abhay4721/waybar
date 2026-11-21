@@ -2,7 +2,7 @@
   "layer": "top",
   "position": "top",
   "margin": "8 8 0 8",
-  "height": 42,
+  "height": 40,
   "spacing": 1,
   "modules-left": [
     "custom/terminal",
@@ -43,7 +43,7 @@
     "on-click": "bash -lc \"$HOME/.config/ml4w/scripts/ml4w-launcher\""
   },
   "clock": {
-    "format": "{:%H:%M\n%d %b}",
+    "format": "<span font_family=\"monospace\">&#8197;&#8202;{:%H:%M\n%d %b}</span>",
     "tooltip-format": "{:%A, %d %B %Y}",
     "on-click": "qs ipc call calendar toggle",
     "on-click-right": "gnome-calendar"
@@ -140,8 +140,8 @@
     "tooltip-format": "{desc} · {volume}%"
   },
   "tray": {
-    "icon-size": 18,
-    "spacing": 8
+    "icon-size": 16,
+    "spacing": 6
   },
   "custom/ml4w": {
     "format": "󰒓",
@@ -155,9 +155,9 @@
   },
   "wlr/taskbar": {
     "format": "{icon}",
-    "icon-size": 20,
+    "icon-size": 18,
     "icon-theme": "Morewaita",
-    "spacing": 4,
+    "spacing": 3,
     "on-click": "activate",
     "on-click-middle": "close",
     "tooltip-format": "{title}"
