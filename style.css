@@ -69,6 +69,10 @@ window#waybar > box {
   font-weight: bold;
 }
 
+#clock label {
+  min-width: 60px;
+}
+
 #custom-terminal {
   border: 1px solid rgba(129, 213, 205, 0.22);
   background: rgba(14, 21, 20, 0.72);
