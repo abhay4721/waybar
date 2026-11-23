@@ -62,7 +62,7 @@ window#waybar > box {
 }
 
 #clock {
-  min-width: 60px;
+  min-width: 72px;
   margin: 3px 1px;
   padding: 0;
   font-size: 11px;
@@ -70,7 +70,7 @@ window#waybar > box {
 }
 
 #clock label {
-  min-width: 60px;
+  min-width: 72px;
 }
 
 #custom-terminal {
