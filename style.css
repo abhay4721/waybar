@@ -72,6 +72,7 @@ window#waybar > box {
 
 #clock label {
   min-width: 72px;
+  margin: 0;
 }
 
 #custom-terminal {
