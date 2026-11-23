@@ -73,6 +73,7 @@ window#waybar > box {
 #clock label {
   min-width: 72px;
   margin: 0;
+  -GtkLabel-xalign: 0.5;
 }
 
 #custom-terminal {
