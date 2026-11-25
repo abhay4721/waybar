@@ -17,11 +17,8 @@
   "modules-right": [
     "custom/updates",
     "battery",
-    "power-profiles-daemon",
     "pulseaudio",
-    "tray",
-    "custom/ml4w",
-    "custom/power"
+    "group/right-other"
   ],
   "hyprland/workspaces": {
     "format": "{name}",
@@ -43,7 +40,7 @@
     "on-click": "bash -lc \"$HOME/.config/ml4w/scripts/ml4w-launcher\""
   },
   "clock": {
-    "format": "<span font_family=\"monospace\">&#8197;&#8202;{:%H:%M\n%d %b}</span>",
+    "format": "{:%H:%M\n%d %b}",
     "tooltip-format": "{:%A, %d %B %Y}",
     "on-click": "qs ipc call calendar toggle",
     "on-click-right": "gnome-calendar"
@@ -80,24 +77,11 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{icon} {capacity}%",
-    "format-charging": "󰂄 {capacity}%",
-    "format-plugged": "󰂄 {capacity}%",
-    "format-icons": [
-      "󰂎",
-      "󰁺",
-      "󰁻",
-      "󰁼",
-      "󰁽",
-      "󰁾",
-      "󰁿",
-      "󰂀",
-      "󰂁",
-      "󰂂",
-      "󰁹"
-    ],
+    "format": "󰂎 {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄 {capacity}%",
     "tooltip-format": "{capacity}% · {timeTo}",
-    "format-full": "󰁹 {capacity}%"
+    "format-full": "󰁹 {capacity}%"
   },
   "power-profiles-daemon": {
     "format": "{icon}",
@@ -152,6 +136,15 @@
     "format": "",
     "tooltip": "Open power menu",
     "on-click": "ml4w-powermenu toggle"
+  },
+  "group/right-other": {
+    "orientation": "horizontal",
+    "modules": [
+      "power-profiles-daemon",
+      "tray",
+      "custom/ml4w",
+      "custom/power"
+    ]
   },
   "wlr/taskbar": {
     "format": "{icon}",
